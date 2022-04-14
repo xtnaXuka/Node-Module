@@ -1,1 +1,1 @@
-This is the content of the file.
+This is the content of the file.We are appending this file synchronously using node.js
