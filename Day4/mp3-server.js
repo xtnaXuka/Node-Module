@@ -18,7 +18,7 @@ var server = http.createServer((server, response) => {
 
 server.listen(port, host, (error) => {
   if (error) {
-    return console.log("Error occired : ", error);
+    return console.log("Error occured : ", error);
   }
   console.log("Server is listening on " + host + ":" + port);
 });
