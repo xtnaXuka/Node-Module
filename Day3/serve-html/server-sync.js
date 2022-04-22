@@ -1,9 +1,11 @@
 var http = require("http");
 var fs = require('fs');
-
+header = {
+  'Content-Type': 'image/jpg'
+}
 http
   .createServer(function (request, response) {
-    response.writeHead(200);
+    response.writeHead(200, header);
 
     data = fs.readFileSync('B170910049.pdf');
 

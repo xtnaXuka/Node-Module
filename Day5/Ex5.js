@@ -33,9 +33,10 @@ const json1 =  JSON.stringify(object)
 //application/pdf
 http
   .createServer(function (request, response) {
+    console.log(request.url)
 
-
-    if(request.url.slice(0, 7) === '/?data='){
+    if(request.url.match(/^\/data/)){
+      console.log('adasd');
 
         if (request.url.slice(7) == 'html') {
 
@@ -54,6 +55,7 @@ http
           }
         // const total = Number(a)+Number(y)+Number(x)+Number(z)
         // console.log(typeof total);
+        response.end()
         
       }
       else{
@@ -65,6 +67,6 @@ http
       
 
   })
-  .listen(3000);
+  .listen(3001);
 
 console.log("server is started at localhost:2000");
