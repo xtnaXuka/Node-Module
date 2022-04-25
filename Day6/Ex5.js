@@ -10,8 +10,13 @@ http.createServer((req, res)=>{
             function datas(image){
                 // console.log(image);
                 fs.writeFileSync('film.txt', image);
-                fs.appendFileSync('films.txt', image);
+                console.log('film',fs.readFileSync('films.txt').toString().split(' ').length);
+                console.log('data',JSON.parse(Buffer.concat(data).toString()).length);
+                if(JSON.parse(Buffer.concat(data).toString()).length > fs.readFileSync('films.txt').toString().split(' ').length){
 
+                    fs.appendFileSync('films.txt', image);
+                    console.log('aa');
+                }
             }
 
             response.on('data', (chunk)=>{
@@ -43,11 +48,11 @@ http.createServer((req, res)=>{
                     })
                     const lada = fs.readFileSync('film.txt').toString()
                     const lada1 = fs.readFileSync('films.txt').toString()
-                    console.log(lada1);
+                    // console.log(lada1.split(' ')[i]);
                     // lata = JSON.parse(Buffer.concat(lada).toString())
                     // console.log('asda',lada.toString());
                     res.write(
-                        `<table> <tr> <td>${p.name}</td> <td> ${p.age}</td> <td> ${p.gender}</td> <td> <img src=${lada1} style='width: 100px' alt="" /></td> </tr>  </table>`
+                        `<table> <tr> <td>${p.name}</td> <td> ${p.age}</td> <td> ${p.gender}</td> <td> <img src=${lada1.split(' ')[i]} style='width: 100px' alt="" /></td> </tr>  </table>`
                       );
                 })
                 res.end()
