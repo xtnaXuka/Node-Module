@@ -2,6 +2,7 @@ var fs = require('fs')
 
 var content = 'This is the content of the file.'
 
-fs.writeFileSync('message.txt', content);
+fs.writeFileSync('message1.txt', content);
+var content1 = fs.readFileSync('message1.txt');
 
-console.log('File written successfully');
+console.log('Content : ' + content1);

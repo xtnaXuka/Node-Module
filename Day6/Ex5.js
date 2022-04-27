@@ -23,9 +23,6 @@ http.createServer((req, res)=>{
                 data.push(chunk)
             })
             response.on('end', ()=>{
-               setTimeout(()=>{
-                   res.write("asd")
-               },1000)
                 const people = JSON.parse(Buffer.concat(data).toString());
                 // console.log(people);
                 people.map((p,i)=>{
