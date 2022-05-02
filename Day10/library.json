@@ -1,0 +1,72 @@
+[
+    {
+        "user":{
+            "id": 1,
+            "name" : "Test"
+        },
+        "book":{
+            "id" : 2,
+            "name" : "TEst book"
+        }
+    },
+    {
+        "user":{
+            "id": 1,
+            "name" : "Test"
+        },
+        "book":{
+            "id" : 3,
+            "name" : "TEst book"
+        }
+    },
+    {
+        "user":{
+            "id": 546,
+            "name" : "Test"
+        },
+        "book":{
+            "id" : 6754,
+            "name" : "TEst book"
+        }
+    },
+    {
+        "user":{
+            "id": 1,
+            "name" : "Test"
+        },
+        "book":{
+            "id" : 4,
+            "name" : "TEst book"
+        }
+    },
+    {
+        "user":{
+            "id": 1,
+            "name" : "Test"
+        },
+        "book":{
+            "id" : 1,
+            "name" : "TEst book"
+        }
+    },
+    {
+        "user":{
+            "id": 1,
+            "name" : "Test"
+        },
+        "book":{
+            "id" : 5,
+            "name" : "TEst book"
+        }
+    },
+    {
+        "user":{
+            "id": 1,
+            "name" : "Test"
+        },
+        "book":{
+            "id" : 6,
+            "name" : "TEst book"
+        }
+    }
+]
