@@ -39,7 +39,7 @@ fs.readFile('./data/data.csv', 'utf8', function (err, data){
   // const data1 =  JSON.stringify(result)
   console.log(typeof result);
   res.send(result)
-
+ 
 })
   res.status(200);
 });
