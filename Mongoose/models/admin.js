@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const userSchema = mongoose.Schema({
+const adminSchema = mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
   mail: {
     type: String,
@@ -15,4 +15,4 @@ const userSchema = mongoose.Schema({
     required: [true, 'Enter the name!'],
     },
 });
-module.exports = mongoose.model("Users", userSchema);
+module.exports = mongoose.model("Admin", adminSchema);
