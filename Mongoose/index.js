@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 console.log(process.env.ATLAS_CONNECTION_URL);
 const jsonParser = bodyParser.json()
 
-const apiRoutes = require("./routes/api");
+const apiRoutes = require("./Routes/api");
 const res = require("express/lib/response");
 
 mongoose
